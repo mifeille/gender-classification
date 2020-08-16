@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+
+    <div class="container">
+        <br>
+        <h3 class="content"><span style="color: #198b90">Gender Classification</span>  Web App</h3>
+        <p class="content">This app is driven by data and machine learning model. As soos as a user upload an image, in the background it converts it into grayscale, crops the face, converts it into eigen image and finally predicts a gender.</p>
+        <br>
+        <img src="{{url_for('static', filename='images/process.PNG')}}" alt="GenderClass" width="590" height="280">
+        <br> <br>
+        <a href="{{ url_for('gender') }}" class="btn btn-outline-primary">Try it Now!</a>
+    </div>
+{% endblock %}
